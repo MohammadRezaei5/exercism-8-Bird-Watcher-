@@ -25,3 +25,17 @@ function birdsInWeek(birdsPerDay, week) {
 }
 
 // console.log(birdsInWeek(birdsPerDay, 2));
+
+///---///
+
+// const birdsPerDay = [2, 5, 0, 7, 4, 1];
+
+function fixBirdCountLog(birdsPerDay) {
+  const days = birdsPerDay.length;
+  for (let i = 0; i < days; i += 2) {
+    birdsPerDay[i] += 1;
+  }
+  return birdsPerDay;
+}
+
+// console.log(fixBirdCountLog(birdsPerDay));
